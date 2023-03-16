@@ -1,0 +1,18 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: "Archivo Black", sans-serif;
+}
+
+a,
+p {
+  font-size: 1.4rem;
+  color: white;
+}
+
+.knap {
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  padding: 14px;
+  color: black;
+}

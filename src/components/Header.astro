@@ -1,0 +1,46 @@
+---
+import "../pages/style.css";
+---
+
+<!-- 
+LOGO
+LINEUP
+ABOUT
+TICKETS
+ -->
+<header>
+  <a href="#"><img id="logo" src="../../public/kune_logo_white.png" alt="Kune Festival Logo" /></a>
+  <nav>
+    <ul>
+      <li><a href="#">LINEUP</a></li>
+      <li><a href="#">ABOUT</a></li>
+      <li><a class="knap" href="#">TICKETS</a></li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  header {
+    display: flex;
+    align-items: center;
+    margin: 30px 30px 0 30px;
+  }
+  ul {
+    display: flex;
+    gap: 50px;
+    justify-content: end;
+  }
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  #logo,
+  nav {
+    flex: 1;
+  }
+  #logo {
+    width: 15%;
+  }
+</style>
