@@ -1,7 +1,14 @@
+/*********** FONT ***********/
+
+@font-face {
+  font-family: "dance";
+  src: url(../../public/Dance.woff2);
+}
+
 body {
   background-color: black;
   color: white;
-  font-family: "Archivo Black", sans-serif;
+  font-family: "dance", sans-serif;
 }
 
 a,
