@@ -1,8 +1,25 @@
+/*********** RESET ***********/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /*********** FONT ***********/
 
 @font-face {
   font-family: "dance";
   src: url(../../public/Dance.woff2);
+}
+main {
+  max-width: 1200px;
+  margin-inline: auto;
 }
 
 body {
@@ -16,10 +33,27 @@ p {
   font-size: 1.4rem;
   color: white;
 }
+.title {
+  text-align: center;
+  font-weight: 100;
+  font-size: 4rem;
+  margin: 40px 0 50px 0;
+}
+
+h2 {
+  font-weight: 100;
+  margin: 10px 0 10px 0;
+}
 
 .knap {
   background-color: rgb(255, 255, 255);
   border-radius: 30px;
   padding: 14px;
   color: black;
+}
+
+.kunstner_flex {
+  display: flex;
+  gap: 133px;
+  margin-bottom: 30px;
 }

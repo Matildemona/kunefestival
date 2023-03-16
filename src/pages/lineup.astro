@@ -1,6 +1,7 @@
 ---
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
+import Card from "../components/Card.astro";
 ---
 
 <html lang="da">
@@ -18,6 +19,28 @@ import Header from "../components/Header.astro";
     <title>Astro</title>
   </head>
   <Header />
-  <body><h1>LINEUP</h1></body>
+  <body>
+    <main>
+      <h1 class="title">LINEUP</h1>
+      <div class="kunstner_flex">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div>
+      <div class="kunstner_flex">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div>
+      <div class="kunstner_flex">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div>
+    </main>
+  </body>
   <Footer />
 </html>
