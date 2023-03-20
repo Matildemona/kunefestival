@@ -1,25 +1,27 @@
 ---
 import "../pages/style.css";
+const title = Astro.props.title;
+const img = Astro.props.img;
 ---
 
 <header>
-  <a href="/"><img id="logo" src="/kune_logo_white.png" alt="Kune Festival Logo" /></a>
-  <nav>
-    <ul>
-      <li><a href="/lineup">LINEUP</a></li>
-      <li><a href="/about">ABOUT</a></li>
-      <li><a class="knap" href="/tickets">TICKETS</a></li>
-    </ul>
-  </nav>
+  <div class="header_indhold">
+    <a href="/"><img id="logo" src="/kune_logo_white.png" alt="Kune Festival Logo" /></a>
+    <nav>
+      <ul>
+        <li><a class="header_text" href="/lineup">LINEUP</a></li>
+        <li><a class="header_text" href="/about">ABOUT</a></li>
+        <li><a class="header_text knap" href="/tickets">TICKETS</a></li>
+      </ul>
+    </nav>
+  </div>
+  <h1 class="header_title">{title}</h1>
 </header>
 
 <style>
   header {
-    display: flex;
-    align-items: center;
     background-image: url(../../public/header_lineup.webp);
     background-size: cover;
-    width: 1920px;
     height: 480px;
   }
   ul {
@@ -39,5 +41,16 @@ import "../pages/style.css";
   }
   #logo {
     width: 15%;
+  }
+  .header_indhold {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+  .header_title {
+    font-weight: 100;
+    font-size: 15rem;
+    text-align: center;
+    margin-top: 20px;
   }
 </style>

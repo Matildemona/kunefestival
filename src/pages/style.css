@@ -28,10 +28,9 @@ body {
   font-family: "dance", sans-serif;
 }
 
-a,
-p {
-  font-size: 1.4rem;
+.header_text {
   color: white;
+  font-size: 1.4rem;
 }
 .title {
   text-align: center;
@@ -39,7 +38,9 @@ p {
   font-size: 4rem;
   margin: 40px 0 50px 0;
 }
-
+h1 {
+  font-weight: 100;
+}
 h2 {
   font-weight: 100;
   margin: 10px 0 10px 0;
@@ -56,5 +57,9 @@ h2 {
   display: grid;
   gap: 40px 119px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin: 20px;
+}
+
+.lineup_title {
+  margin: 40px 0 40px 0;
+  font-size: 4rem;
 }
