@@ -67,3 +67,7 @@ h2 {
   position: absolute;
   z-index: -1;
 }
+
+@media (max-width: 700px) {
+  /*HVIS VI KAN NÅ DET*/
+}
