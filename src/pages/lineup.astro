@@ -1,6 +1,19 @@
 ---
+//https://zughdnovydxfjlqtxvrc.supabase.co
+//eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp1Z2hkbm92eWR4ZmpscXR4dnJjIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzg3ODc0MjcsImV4cCI6MTk5NDM2MzQyN30.laRz3zvjBV6f4mHcaEviXOnXpxnJ4sgVHoQUDVEPWe4
+
+const response = await fetch("https://zughdnovydxfjlqtxvrc.supabase.co/rest/v1/Kunstner", {
+  method: "GET",
+  headers: {
+    apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp1Z2hkbm92eWR4ZmpscXR4dnJjIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzg3ODc0MjcsImV4cCI6MTk5NDM2MzQyN30.laRz3zvjBV6f4mHcaEviXOnXpxnJ4sgVHoQUDVEPWe4",
+  },
+});
+
+const data = await response.json();
+
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
+import Card from "../components/Card.astro";
 ---
 
 <html lang="da">
@@ -15,9 +28,31 @@ import Header from "../components/Header.astro";
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
-    <title>Astro</title>
+    <title>Kune - Lineup</title>
   </head>
-  <Header />
-  <body><h1>LINEUP</h1></body>
+  <img class="header_img" src="/header_lineup.webp" alt="header" />
+  <Header title="LINEUP" />
+  <body>
+    <main>
+      <h1 class="lineup_title">Music</h1>
+      <div class="kunstner_flex">
+        {
+          data.map((artist) => {
+            return <Card name={artist.name} date={artist.date} time={artist.time} place={artist.place} img={artist.img} />;
+          })
+        }
+      </div>
+      <h1 class="lineup_title">Art</h1>
+      <div class="kunstner_flex">
+        {
+          data.map((artist) => {
+            return <Card name={artist.name} date={artist.date} time={artist.time} place={artist.place} img={artist.img} />;
+          })
+        }
+      </div>
+    </main>
+  </body>
   <Footer />
+
+
 </html>

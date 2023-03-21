@@ -1,8 +1,25 @@
+/*********** RESET ***********/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /*********** FONT ***********/
 
 @font-face {
   font-family: "dance";
-  src: url(../../public/Dance.woff2);
+  src: url(/Dance.woff2);
+}
+main {
+  max-width: 1200px;
+  margin-inline: auto;
 }
 
 @font-face {
@@ -16,9 +33,27 @@
 }
 
 body {
-  background-color: black;
+  background-color: #121212;
   color: white;
   font-family: "dance", sans-serif;
+}
+
+.header_text {
+  color: white;
+  font-size: 1.4rem;
+}
+.title {
+  text-align: center;
+  font-weight: 100;
+  font-size: 4rem;
+  margin: 40px 0 50px 0;
+}
+h1 {
+  font-weight: 100;
+}
+h2 {
+  font-weight: 100;
+  margin: 10px 0 10px 0;
 }
 
 .knap {
@@ -27,4 +62,19 @@ body {
   padding: 14px;
   color: black;
   font-family: dance;
+}
+
+.kunstner_flex {
+  display: grid;
+  gap: 40px 119px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.lineup_title {
+  margin: 40px 0 40px 0;
+  font-size: 4rem;
+}
+.header_img {
+  position: absolute;
+  z-index: -1;
 }

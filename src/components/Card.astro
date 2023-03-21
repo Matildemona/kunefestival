@@ -1,0 +1,43 @@
+---
+const { name, date, time, place, img } = Astro.props;
+---
+
+<a href="#">
+  <div class="card">
+    <div>
+      <img class="card_img" src={img} alt="billede" />
+    </div>
+    <div>
+      <h2>{name}</h2>
+      <div class="kunstner_info">
+        <ul>
+          <li>{date}</li>
+          <li>{time}</li>
+          <li>{place}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</a>
+
+<style>
+  .card {
+    max-width: 200px;
+  }
+  .card_img {
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+  }
+  .kunstner_info {
+    font-family: "Montserrat", sans-serif;
+    text-align: right;
+  }
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+</style>
