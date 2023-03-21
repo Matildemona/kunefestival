@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "dance";
+    src: url("kunefestival/public/Dance.woff2");
+}
+  .logo{
+        width: 5%;
+          padding: 1rem;  
+      }
+      h1{
+          font-family: 'Dance';
+      }
+
+      .navigation {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+  }
+  
+  .container {
+    max-width: 97%;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  nav ul {
+    margin: 0 auto;
+    text-align: right;
+  }
+  
+  nav ul li {
+    font-family: "dance";
+    font-size: 24px;
+    display: inline-block;
+    color: white;
+    padding: 1rem;
+  }
+  h1 {
+    font-family: "dance";
+    font-size: 100px;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    padding: 6rem;
+  }
+  h2{
+    font-family: "dance";
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    padding: 3rem;
+  }
+  .body-box {
+    margin: 0 auto;
+    background-image: url("UØ_KUNE22-Alexandra\ B-9816.jpg");
+    background-size: 2000px;
+  }
+  .body-box2 {
+    background-color: black;
+    background-image: url("Logos/logo-outline.png");
+    background-size: 1000px;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+  p {
+    color: white;
+    font-family: 'Montserrat';
+    margin: 2rem 10rem;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 10px;
+  }

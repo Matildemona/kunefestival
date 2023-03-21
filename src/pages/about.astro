@@ -1,23 +1,42 @@
 ---
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
+import "as_style.css";
 ---
 
-<html lang="da">
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="as_style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
-    <title>Astro</title>
+    <title>kune festival</title>
   </head>
-  <Header />
-  <body><h1>ABOUT</h1></body>
+  <body>
+    <div class="body-box">
+      <Header />
+      <h1>about</h1>
+    </div>
+    <div class="body-box2">
+      <h2>Kune. Togetherness.</h2>
+      <p>Being at KUNE Festival is an immersive experience that blends art, music, and the island’s natural beauty. The location’s secludedness adds to the sense of separation from everyday life.</p>
+      <p>
+        At the same time, the art invites us to engage in open discussions and imagine a world that can be different, making a positive impact over our mentality and worldview. In conjunction with the art, the music creates a holistic cultural experience representative of the modern, young Nordic
+        artistic community.
+      </p>
+      <p>
+        By embracing the Otherness, we create a more inclusive, compassionate, and open-minded world. Rather than viewing differences as a source of conflict or division, we recognize them as a source of strength and beauty. The Otherness element invites us to see the world through the eyes of
+        others, to listen to their stories, and to appreciate their unique perspectives. In doing so, we expand our horizons and gain a more complex understanding of what it means to be human.
+      </p>
+      <p>
+        On the more practical side of things, KUNE Festival is an NGO made up of over 30 passionate and dedicated individuals who work voluntarily year-round to create this extraordinary experience. Our team is comprised of artists, musicians, designers, writers, project managers, and cultural
+        enthusiasts, all united by our shared vision and values. We are motivated by the belief that art and culture have the power to create positive change in the world.
+      </p>
+    </div>
+  </body>
   <Footer />
 </html>
