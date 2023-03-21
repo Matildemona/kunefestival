@@ -11,9 +11,9 @@ const { name, date, time, place, img } = Astro.props;
       <h2>{name}</h2>
       <div class="kunstner_info">
         <ul>
-          <li>{date}</li>
-          <li>{time}</li>
-          <li>{place}</li>
+          <li class="kunstner_text_margin">{date}</li>
+          <li class="kunstner_text_margin">{time}</li>
+          <li class="kunstner_text_margin">{place}</li>
         </ul>
       </div>
     </div>
@@ -33,6 +33,9 @@ const { name, date, time, place, img } = Astro.props;
     font-family: "Montserrat", sans-serif;
     text-align: right;
     font-weight: bold;
+  }
+  .kunstner_text_margin {
+    margin: 7px 0 7px 0;
   }
   li {
     list-style: none;
