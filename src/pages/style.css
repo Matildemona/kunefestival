@@ -5,21 +5,187 @@
   src: url(../../public/Dance.woff2);
 }
 
+@font-face {
+  font-family: "montserrat";
+  src: url(../../public/montserrat-variablefont_wght-webfont.woff2);
+}
+
+@font-face {
+  font-family: "bebasneue";
+  src: url(../../public/bebasneue-regular-webfont.woff2);
+}
+
 body {
   background-color: black;
   color: white;
   font-family: "dance", sans-serif;
 }
 
-a,
-p {
-  font-size: 1.4rem;
-  color: white;
+/*forside*/
+
+.hero {
+  background-image: url(../../public/FORSIDE.jpg);
+  height: 600px;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
-.knap {
+.container {
+  font-size: 190px;
+  margin-right: 100px;
+  margin-top: 60px;
+  margin-left: 260px;
+  font-family: dance;
+}
+
+h2 {
+  font-size: 50px;
+  text-align: center;
+  margin-right: 40px;
+}
+
+a,
+p,
+.paragraf1,
+.paragraf2,
+.paragraf3,
+.paragraf4 {
+  font-size: 20px;
+  color: white;
+  font-family: montserrat;
+}
+
+a {
+  font-size: 1.4rem;
+  color: white;
+  font-family: dance;
+}
+
+/*knap*/ /*more artists knap*/
+
+.knap,
+.btn--secondary {
   background-color: rgb(255, 255, 255);
   border-radius: 30px;
   padding: 14px;
   color: black;
+  font-family: dance;
+}
+
+.btn--secondary {
+  margin-top: 800px;
+  margin-left: 750px;
+  margin-bottom: 40px;
+  border-radius: 30px;
+  padding: 25px;
+  width: 20%;
+  font-size: 30px;
+}
+/*LINEUP knap*/
+
+.btn--primary {
+  background-color: rgb(215, 96, 37);
+  border-color: rgb(225, 217, 217);
+  border-radius: 30px;
+  padding: 25px;
+  width: 30%;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-left: 500px;
+  margin-top: 200px;
+  font-size: 40px;
+  font-style: normal;
+  font-family: bebasneue;
+}
+
+.btn--primary:hover {
+  background: rgb(237, 96, 202);
+}
+
+/*forside*/
+h1 {
+  margin-left: 750px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+}
+
+p {
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.paragraf1,
+.paragraf2,
+.paragraf3,
+.paragraf4 {
+  margin-top: 80px;
+  margin-left: 300px;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-style: bold;
+}
+
+.island {
+  margin-left: 450px;
+  margin-top: 50px;
+  border-radius: 50px;
+}
+
+.islandbox {
+  background-image: url(../../public/background.png);
+  background-size: cover;
+}
+
+/*layout af billederne LINEUP*/
+
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.flex_col {
+  border-radius: 50px;
+  height: 50px;
+}
+
+.dj {
+  border-radius: 50px;
+}
+
+@media (max-width: 900px) {
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  .flex_col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 5px;
+  }
+
+  .flex_col > :last-child {
+    margin-top: auto;
+  }
+}
+
+.dd_1,
+.dd_2,
+.dd_3 {
+  margin-right: 350px;
+  font-size: 25px;
+}
+
+.dt_1,
+.dt_2,
+.dt_3 {
+  margin-right: 10px;
+  font-size: 35px;
 }

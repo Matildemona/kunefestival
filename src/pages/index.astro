@@ -11,14 +11,73 @@ import Header from "../components/Header.astro";
     <meta name="generator" content={Astro.generator} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
     <title>Astro</title>
   </head>
   <Header />
-  
-  <body><h1>INDEX</h1></body>
+  <body>
+    <div class="hero">
+      <div class="container">
+        KUNE FESTIVAL
+        <h2>19-23 JULI</h2>
+        <button class="btn btn--primary">LINE UP</button>
+      </div>
+    </div>
+
+    <div class="islandbox">
+      <h1>About Kune festival</h1>
+      <div class="paragraf1">
+        5-day electronic music festival that takes place on an island 30 minutes
+        away from Copenhagen.
+      </div>
+
+      <p>
+        <div class="paragraf2">
+          A one-of-its-kind celebration of the Scandinavian underground culture.
+        </div>
+
+        <div class="paragraf3">
+          A playground with five stages, two art galleries, and multiple art
+          installations.
+        </div>
+
+        <div class="paragraf4">
+          An intimate, holistic experience with access to a camping ground, food
+          area, dipping spot, and unique sunsets. A true hidden gem.
+        </div>
+      </p>
+
+      <img class="island" src="../../public/island.png" />
+    </div>
+    <h1>LineUp</h1>
+    <div class="grid_1-1-1">
+      <div class="flex_col">
+        <img class="dj" src="../../public/AlexandraB.jpg" />
+        <dt class="dt_1">ALEXANDRA</dt>
+        <dd class="dd_1">20.00 JULI BIG STAGE</dd>
+      </div>
+      <div class="flex_col">
+        <img class="dj" src="../../public/Alexandra.jpg" />
+        <dt class="dt_2">JOHN</dt>
+        <dd class="dd_2">20 JULI 20.00 BIG STAGE</dd>
+      </div>
+      <div class="flex_col">
+        <img class="dj" src="../../public/djlineUp.jpg" />
+        <dt class="dt_3">DARLING</dt>
+        <dd class="dd_3">22 JULI 20.00 BIG STAGE</dd>
+      </div>
+    </div>
+    <button class="btn btn--secondary">MORE ARTISTS</button>
+  </body>
+
   <Footer />
 </html>
