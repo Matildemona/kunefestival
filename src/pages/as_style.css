@@ -1,6 +1,6 @@
 @font-face {
   font-family: "dance";
-  src: url("kunefestival/public/Dance.woff2");
+  src: url("/Dance.woff2");
 }
 .logo {
   width: 5%;
@@ -58,11 +58,11 @@ h2 {
 }
 .body-box {
   margin: 0 auto;
-  background-image: url("UØ_KUNE22-Alexandra\ B-9816.jpg");
+  background-image: url("/UØ_KUNE22-Alexandra\ B-9816.jpg");
   background-size: 2000px;
 }
 .body-box2 {
-  background-image: url("../../public/logo-outline.png");
+  background-image: url("/logo-outline.png");
   background-size: 1000px;
   background-repeat: no-repeat;
   background-position: right;

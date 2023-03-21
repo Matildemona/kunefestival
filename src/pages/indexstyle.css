@@ -2,17 +2,17 @@
 
 @font-face {
   font-family: "dance";
-  src: url(../../public/Dance.woff2);
+  src: url(/Dance.woff2);
 }
 
 @font-face {
   font-family: "montserrat";
-  src: url(../../public/montserrat-variablefont_wght-webfont.woff2);
+  src: url(/montserrat-variablefont_wght-webfont.woff2);
 }
 
 @font-face {
   font-family: "bebasneue";
-  src: url(../../public/bebasneue-regular-webfont.woff2);
+  src: url(/bebasneue-regular-webfont.woff2);
 }
 
 body {
@@ -24,7 +24,7 @@ body {
 /*forside*/
 
 .hero {
-  background-image: url(../../public/FORSIDE.jpg);
+  background-image: url(/FORSIDE.jpg);
   height: 600px;
   background-size: cover;
   padding-top: 100px;
@@ -135,7 +135,7 @@ p {
 }
 
 .islandbox {
-  background-image: url(../../public/background.png);
+  background-image: url(/background.png);
   background-size: cover;
 }
 
