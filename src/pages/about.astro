@@ -1,7 +1,8 @@
 ---
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
-import "as_style.css";
+import "../pages/as_style.css";
+import "../pages/style.css";
 ---
 
 <!DOCTYPE html>
@@ -10,17 +11,14 @@ import "as_style.css";
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="as_style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
     <title>kune festival</title>
   </head>
   <body>
-    <div class="body-box">
-      <Header />
-      <h1>about</h1>
-    </div>
+    <img class="header_img" src="/header_about.webp" alt="header" />
+    <Header title="ABOUT" />
     <div class="body-box2">
       <h2>Kune. Togetherness.</h2>
       <p>Being at KUNE Festival is an immersive experience that blends art, music, and the island’s natural beauty. The location’s secludedness adds to the sense of separation from everyday life.</p>

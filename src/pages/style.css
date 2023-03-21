@@ -23,11 +23,6 @@ main {
 }
 
 @font-face {
-  font-family: "montserrat";
-  src: url(../../public/montserrat-variablefont_wght-webfont.woff2);
-}
-
-@font-face {
   font-family: "bebasneue";
   src: url(../../public/bebasneue-regular-webfont.woff2);
 }
