@@ -2,6 +2,8 @@
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import "../pages/indexstyle.css";
+import "../pages/lineup.astro";
+import "../pages/about.astro";
 ---
 
 <html lang="da">
@@ -28,9 +30,11 @@ import "../pages/indexstyle.css";
   <body>
     <div class="hero">
       <div class="container">
-        KUNE FESTIVAL
+        <div class="title">KUNE FESTIVAL</div>
         <h2>19-23 JULI</h2>
-        <button class="btn btn--primary">LINE UP</button>
+        <a href="/lineup.astro">
+          <button class="btn btn--primary">LINE UP</button></a
+        >
       </div>
     </div>
 
